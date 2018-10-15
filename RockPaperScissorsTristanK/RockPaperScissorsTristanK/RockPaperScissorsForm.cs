@@ -15,6 +15,12 @@ namespace RockPaperScissorsTristanK
         public frmRockPaperScissors()
         {
             InitializeComponent();
+            lblOutcome.Hide();
+        }
+
+        private void radCChoiceRock_CheckedChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
