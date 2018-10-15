@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace GuesseGameTristanK
+namespace RockPaperScissorsTristanK
 {
-    public partial class GuesseGameForm : Form
+    public partial class frmRockPaperScissors : Form
     {
-        public GuesseGameForm()
+        public frmRockPaperScissors()
         {
             InitializeComponent();
         }

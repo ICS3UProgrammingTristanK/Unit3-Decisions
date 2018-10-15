@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace GuesseGameTristanK.Properties
+namespace GuessingGameTristanK.Properties
 {
 
 

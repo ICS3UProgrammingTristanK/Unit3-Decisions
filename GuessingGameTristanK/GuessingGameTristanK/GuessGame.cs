@@ -4,9 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace GuesseGameTristanK
+namespace GuessingGameTristanK
 {
-    static class GuesseGame
+    static class GuessGame
     {
         /// <summary>
         /// The main entry point for the application.
@@ -16,7 +16,7 @@ namespace GuesseGameTristanK
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new GuesseGameForm());
+            Application.Run(new frmGuessGame());
         }
     }
 }
