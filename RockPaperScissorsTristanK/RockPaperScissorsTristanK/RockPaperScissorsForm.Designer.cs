@@ -37,6 +37,7 @@
             this.radCChoiceScissors = new System.Windows.Forms.RadioButton();
             this.grbComputersChoice = new System.Windows.Forms.GroupBox();
             this.lblOutcome = new System.Windows.Forms.Label();
+            this.btnPlay = new System.Windows.Forms.Button();
             this.grbUsersChoice.SuspendLayout();
             this.grbComputersChoice.SuspendLayout();
             this.SuspendLayout();
@@ -89,6 +90,7 @@
             // radCChoiceRock
             // 
             this.radCChoiceRock.AutoSize = true;
+            this.radCChoiceRock.Enabled = false;
             this.radCChoiceRock.Location = new System.Drawing.Point(6, 19);
             this.radCChoiceRock.Name = "radCChoiceRock";
             this.radCChoiceRock.Size = new System.Drawing.Size(51, 17);
@@ -101,6 +103,7 @@
             // radCChoicePaper
             // 
             this.radCChoicePaper.AutoSize = true;
+            this.radCChoicePaper.Enabled = false;
             this.radCChoicePaper.Location = new System.Drawing.Point(6, 42);
             this.radCChoicePaper.Name = "radCChoicePaper";
             this.radCChoicePaper.Size = new System.Drawing.Size(53, 17);
@@ -112,6 +115,7 @@
             // radCChoiceScissors
             // 
             this.radCChoiceScissors.AutoSize = true;
+            this.radCChoiceScissors.Enabled = false;
             this.radCChoiceScissors.Location = new System.Drawing.Point(6, 65);
             this.radCChoiceScissors.Name = "radCChoiceScissors";
             this.radCChoiceScissors.Size = new System.Drawing.Size(64, 17);
@@ -125,7 +129,8 @@
             this.grbComputersChoice.Controls.Add(this.radCChoiceRock);
             this.grbComputersChoice.Controls.Add(this.radCChoiceScissors);
             this.grbComputersChoice.Controls.Add(this.radCChoicePaper);
-            this.grbComputersChoice.Location = new System.Drawing.Point(12, 144);
+            this.grbComputersChoice.Enabled = false;
+            this.grbComputersChoice.Location = new System.Drawing.Point(12, 155);
             this.grbComputersChoice.Name = "grbComputersChoice";
             this.grbComputersChoice.Size = new System.Drawing.Size(162, 93);
             this.grbComputersChoice.TabIndex = 3;
@@ -135,17 +140,28 @@
             // lblOutcome
             // 
             this.lblOutcome.AutoSize = true;
-            this.lblOutcome.Location = new System.Drawing.Point(15, 256);
+            this.lblOutcome.Location = new System.Drawing.Point(12, 263);
             this.lblOutcome.Name = "lblOutcome";
             this.lblOutcome.Size = new System.Drawing.Size(74, 13);
             this.lblOutcome.TabIndex = 4;
             this.lblOutcome.Text = "The Winner Is";
             // 
+            // btnPlay
+            // 
+            this.btnPlay.Location = new System.Drawing.Point(48, 126);
+            this.btnPlay.Name = "btnPlay";
+            this.btnPlay.Size = new System.Drawing.Size(75, 23);
+            this.btnPlay.TabIndex = 5;
+            this.btnPlay.Text = "Play";
+            this.btnPlay.UseVisualStyleBackColor = true;
+            this.btnPlay.Click += new System.EventHandler(this.button1_Click);
+            // 
             // frmRockPaperScissors
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(195, 291);
+            this.ClientSize = new System.Drawing.Size(194, 306);
+            this.Controls.Add(this.btnPlay);
             this.Controls.Add(this.lblOutcome);
             this.Controls.Add(this.grbComputersChoice);
             this.Controls.Add(this.grbUsersChoice);
@@ -171,6 +187,7 @@
         private System.Windows.Forms.RadioButton radCChoiceScissors;
         private System.Windows.Forms.GroupBox grbComputersChoice;
         private System.Windows.Forms.Label lblOutcome;
+        private System.Windows.Forms.Button btnPlay;
     }
 }
 
