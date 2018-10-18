@@ -33,6 +33,7 @@ namespace ChocolateBoxesTristanK
             {
                 //Tell the user they won a prize
                 this.lblPrize.Text = "You won a prize!";
+
                 //Display label
                 lblPrize.Show();
             }
@@ -40,6 +41,7 @@ namespace ChocolateBoxesTristanK
             {
                 //Tell the user the got an honorable mention
                 this.lblPrize.Text = "You get an honorable mention!";
+
                 //Display label
                 lblPrize.Show();
 
@@ -48,6 +50,7 @@ namespace ChocolateBoxesTristanK
             {
                 //tell the user they won a small prize
                 this.lblPrize.Text = "You won a small prize!";
+
                 //Display label
                 lblPrize.Show();
 
