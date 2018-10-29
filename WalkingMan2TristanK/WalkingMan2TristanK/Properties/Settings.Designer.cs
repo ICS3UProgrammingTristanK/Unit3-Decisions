@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace WalkingManTristanK.Properties
+namespace WalkingMan2TristanK.Properties
 {
 
 

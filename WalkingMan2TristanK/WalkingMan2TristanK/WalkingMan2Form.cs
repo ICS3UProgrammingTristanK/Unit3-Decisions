@@ -8,11 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace WalkingManTristanK
+namespace WalkingMan2TristanK
 {
-    public partial class Form1 : Form
+    public partial class frmWalkingMan2 : Form
     {
-        public Form1()
+        public frmWalkingMan2()
         {
             InitializeComponent();
         }

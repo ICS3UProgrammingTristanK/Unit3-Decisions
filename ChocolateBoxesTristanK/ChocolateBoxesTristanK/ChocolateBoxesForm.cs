@@ -37,25 +37,28 @@ namespace ChocolateBoxesTristanK
                 //Display label
                 lblPrize.Show();
             }
-            else if (nudBoxesSold.Value < 10)
-            {
-                //Tell the user the got an honorable mention
-                this.lblPrize.Text = "You get an honorable mention!";
-
-                //Display label
-                lblPrize.Show();
-
-            }
             else
             {
-                //tell the user they won a small prize
-                this.lblPrize.Text = "You won a small prize!";
+                if (nudBoxesSold.Value < 10)
+                {
+                    //Tell the user the got an honorable mention
+                    this.lblPrize.Text = "You get an honorable mention!";
 
-                //Display label
-                lblPrize.Show();
+                    //Display label
+                    lblPrize.Show();
+                }
+
+                else
+                {
+                    //tell the user they won a small prize
+                    this.lblPrize.Text = "You won a small prize!";
+
+                    //Display label
+                    lblPrize.Show();
+
+                }
 
             }
-
         }
     }
 }
