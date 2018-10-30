@@ -29,46 +29,50 @@
         private void InitializeComponent()
         {
             this.btnWalk = new System.Windows.Forms.Button();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.picMan = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.picMan)).BeginInit();
             this.SuspendLayout();
             // 
             // btnWalk
             // 
             this.btnWalk.Font = new System.Drawing.Font("MV Boli", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnWalk.Location = new System.Drawing.Point(115, 60);
+            this.btnWalk.Location = new System.Drawing.Point(88, 63);
             this.btnWalk.Name = "btnWalk";
             this.btnWalk.Size = new System.Drawing.Size(107, 50);
             this.btnWalk.TabIndex = 0;
             this.btnWalk.Text = "Walk";
             this.btnWalk.UseVisualStyleBackColor = true;
+            this.btnWalk.Click += new System.EventHandler(this.btnWalk_Click);
             // 
-            // pictureBox1
+            // picMan
             // 
-            this.pictureBox1.Location = new System.Drawing.Point(91, 164);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(155, 128);
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.picMan.Image = global::WalkingMan2TristanK.Properties.Resources.walk5;
+            this.picMan.Location = new System.Drawing.Point(50, 157);
+            this.picMan.Name = "picMan";
+            this.picMan.Size = new System.Drawing.Size(180, 180);
+            this.picMan.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize;
+            this.picMan.TabIndex = 1;
+            this.picMan.TabStop = false;
             // 
             // frmWalkingMan2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(366, 372);
-            this.Controls.Add(this.pictureBox1);
+            this.ClientSize = new System.Drawing.Size(286, 372);
+            this.Controls.Add(this.picMan);
             this.Controls.Add(this.btnWalk);
             this.Name = "frmWalkingMan2";
             this.Text = "Walking Man";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picMan)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Button btnWalk;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox picMan;
     }
 }
 

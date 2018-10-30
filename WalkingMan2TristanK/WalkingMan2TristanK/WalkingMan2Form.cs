@@ -1,4 +1,11 @@
-﻿using System;
+﻿/*
+ * Created By: Tristan Kalabric
+ * Created On: October 30, 2018
+ * Created For: ICS3U Programming
+ * Daily Assignment - Day 21 - Walking Man
+ * This program refreshes a picture box to man it look like a man walking
+ */
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,6 +14,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Threading;
 
 namespace WalkingMan2TristanK
 {
@@ -15,6 +23,64 @@ namespace WalkingMan2TristanK
         public frmWalkingMan2()
         {
             InitializeComponent();
+        }
+
+        private void btnWalk_Click(object sender, EventArgs e)
+        {
+            //Declare local variables
+            const byte MAX_FRAMES = 10;
+            int pictureFrameCounter = 1;
+
+            //Continue this loop while the frame counter has not reached the max number offrames we have to display
+            while (pictureFrameCounter < MAX_FRAMES + 1)
+            {
+                if (pictureFrameCounter == 1)
+                {
+                    this.picMan.Image = Properties.Resources.walk1;
+                }
+                else if (pictureFrameCounter == 2)
+                {
+                    this.picMan.Image = Properties.Resources.walk2;
+                }
+                else if (pictureFrameCounter == 3)
+                {
+                    this.picMan.Image = Properties.Resources.walk3;
+                }
+                else if (pictureFrameCounter == 4)
+                {
+                    this.picMan.Image = Properties.Resources.walk4;
+                }
+                else if (pictureFrameCounter == 5)
+                {
+                    this.picMan.Image = Properties.Resources.walk5;
+                }
+                else if (pictureFrameCounter == 6)
+                {
+                    this.picMan.Image = Properties.Resources.walk6;
+                }
+                else if (pictureFrameCounter == 7)
+                {
+                    this.picMan.Image = Properties.Resources.walk7;
+                }
+                else if (pictureFrameCounter == 8)
+                {
+                    this.picMan.Image = Properties.Resources.walk8;
+                }
+                else if (pictureFrameCounter == 9)
+                {
+                    this.picMan.Image = Properties.Resources.walk9;
+                }
+                else if (pictureFrameCounter == 10)
+                {
+                    this.picMan.Image = Properties.Resources.walk10;
+                }
+                //Increment counter by 1
+                pictureFrameCounter = pictureFrameCounter + 1;
+                this.Refresh();
+
+                //Pause the loop for 100 milliseconds
+                Thread.Sleep(100);
+            }
         }
     }
 }
