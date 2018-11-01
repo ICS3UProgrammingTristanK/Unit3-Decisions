@@ -1,4 +1,11 @@
-﻿using System;
+﻿/*
+ * Created by: Tristan Kalabric
+ * Created on: November 1, 2018
+ * Created for: ICS3U Programming
+ * Daily Assignment – Day #24 - Unicode A to Z
+ * This program displays the unicode number for all capital letters in the english alphabet
+*/
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
